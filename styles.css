@@ -1,0 +1,256 @@
+
+/* -----todo----- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #0a0f1e; /* fundo  */
+    color: #ffffff; /* texto branco padrão */
+    font-size: 16px; /* Tamanho base */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* a logo */
+.logo-container {
+    text-align: auto; /* centraliza a logo */
+    position: relative;
+    top: 30px;
+    margin-top: 50px; /* aumenta este valor para descer a logo */
+    margin-bottom: 20px; /* espaço inferior */
+}
+
+.logo {
+    max-width: 150px; /* o tamanho máximo da logo */
+    height: auto; /* mantem a proporção */
+    border-radius: 10px; /* arredonda as bordas, se preferir */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* coloca sombra para estética */
+}
+
+/* -----BANNER----- */
+#banner {
+    background-image: url('imagem/bandoBanner.jpg'); /* imagem do banner */
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.banner-content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 25rem; /* letra do banner(Roupa Velha) */
+    text-shadow: 3px 3px 5px #000;
+}
+
+.banner-content p {
+    font-size: 1.8rem;
+    margin-top: 10px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+
+/*-----SEÇÕES----- */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00aaff;
+    text-shadow: 2px 2px 4px #000;
+}
+
+section p {
+    font-size: 1.2rem;
+    color: #e1e1e6;
+    line-height: 1.8;
+}
+
+/* Redes Sociais */
+.redes-sociais {
+    position: absolute; /* pocição dos ícones no canto da pagina */
+    top: 20px; /* distancia do topo */
+    right: 20px; /* distancia da direita */
+    display: flex;
+    gap: 15px; /* espaçamento entre os icones */
+}
+
+.redes-sociais a img {
+    width: 30px; /* tamanho dos ícones */
+    transition: transform 0.3s ease; /* efeito ao passar o mouse */
+}
+
+.redes-sociais a img:hover {
+    transform: scale(1.2); /* aumenta o ícone ao passar o mouse */
+}
+
+/*-----SOBRE NÓS----- */
+#sobre {
+    background-color: #1c2536;
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    color: white;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column; /* alinha logo e formulário verticalmente */
+    align-items: center; /* centraliza horizontalmente */
+    justify-content: center; /* centraliza verticalmente */
+    height: 100vh; /* altura da tela inteira */
+    background-color: #0a1728; /* fundo escuro para contraste */
+    padding: 20px;
+}
+
+/*-----LOGO-----*/
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-container img {
+    max-width: 150px; /* ajuste o tamanho da logo */
+    height: auto;
+    border-radius: 10px; /* borda arredondada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* sombra elegante */
+}
+
+/*-----FORMULÁRIO-----*/
+#formulario {
+    background-color: #1c2536; /* fundo do formulario */
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 600px; /* largura maxima */
+    width: 100%;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* sombra ao redor */
+}
+
+#formulario h2,
+#formulario p {
+    text-align: center;
+    color: #d1d8e0; /* texto claro */
+}
+
+#formulario label {
+    color: #d1d8e0;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#formulario input,
+#formulario textarea,
+#formulario button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#formulario input,
+#formulario textarea {
+    background-color: #e1e1e6; /* cor do campo */
+}
+
+#formulario .btn-submit {
+    background-color: #28527a;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#formulario .btn-submit:hover {
+    background-color: #00aaff;
+}
+
+#formulario .btn-reset {
+    background-color: #a83232;
+    color: #fff;
+    cursor: pointer;
+}
+
+#formulario .btn-reset:hover {
+    background-color: #ff0000;
+}
+
+/* -----FOTOS----- */
+#fotos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px ;
+}
+
+#fotos img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid #28527a;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    margin: 20px ;
+}
+
+#fotos img:hover {
+    transform: scale(1.1);
+    border-color: #00aaff;
+}
+
+/* -----AGENDA----- */
+#agenda {
+    background-color: #1c2536;
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#agenda ul {
+    list-style: none;
+    padding: 0;
+}
+
+#agenda li {
+    color: #d1d8e0;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #28527a;
+}
+
+/* ----- FOOTER ----- */
+footer {
+    background-color: #0d1626;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+
+
+
